@@ -32,15 +32,13 @@ export function Gallery() {
         className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-105 saturate-0 group-hover:saturate-100"
         sizes="(max-width: 768px) 50vw, 25vw"
        />
-       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+       <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
         <span className="text-white text-sm font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">View Moment</span>
        </div>
       </div>
      ))}
     </div>
    </div>
-   {/* Bottom Wave Connector to Footer */}
-   <WaveConnector position="bottom" colorClassName="fill-[#1a1111]" />
   </section>
  )
 }

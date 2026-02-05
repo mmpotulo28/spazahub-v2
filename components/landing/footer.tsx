@@ -8,25 +8,16 @@ export function Footer() {
  return (
   <footer className="bg-[#1a1111] text-white pt-24 pb-8 relative overflow-hidden">
    {/* Top Wave Connector from Gallery (Light) */}
-   <WaveConnector position="top" colorClassName="fill-zinc-50" />
+   <WaveConnector position="top" colorClassName="fill-white" />
 
    {/* Geometric Decoration */}
    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary rounded-full mix-blend-overlay filter blur-[120px] opacity-10 pointer-events-none" />
 
    <div className="container mx-auto px-4 relative z-10">
-    {/* Sponsors */}
-    <div className="mb-20 border-b border-white/5 pb-16">
-     <h3 className="text-xl font-bold text-center mb-10 text-primary uppercase tracking-widest text-sm">Trusted Partners & Sponsors</h3>
-     <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60 hover:opacity-100 transition-opacity duration-700">
-      {[1, 2, 3, 4, 5].map(n => (
-       <div key={n} className="relative w-32 h-16 md:w-40 md:h-20 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105">
-        <Image src={`/images/sponsor${n}.png`} alt={`Sponsor ${n}`} fill className="object-contain" sizes="160px" />
-       </div>
-      ))}
-     </div>
-    </div>
+    {/* Sponsors Removed - Moved to seperate component */}
+    {/* <div className="mb-20 border-b border-white/5 pb-16">...</div> */}
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-20 whitespace-no-wrap">
      {/* Brand */}
      <div className="lg:col-span-4 space-y-6">
       <div className="relative w-32 h-32">
