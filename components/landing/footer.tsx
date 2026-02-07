@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, ArrowUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { WaveConnector } from "./wave-connector"
+import Link from "next/link"
 
 export function Footer() {
  return (
@@ -11,7 +12,7 @@ export function Footer() {
    <WaveConnector position="top" colorClassName="fill-white" />
 
    {/* Geometric Decoration */}
-   <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary rounded-full mix-blend-overlay filter blur-[120px] opacity-10 pointer-events-none" />
+   <div className="absolute top-0 right-0 w-125 h-125 bg-primary rounded-full mix-blend-overlay filter blur-[120px] opacity-10 pointer-events-none" />
 
    <div className="container mx-auto px-4 relative z-10">
     {/* Sponsors Removed - Moved to seperate component */}
@@ -88,9 +89,9 @@ export function Footer() {
       <p className="flex items-center gap-1">
        Built by <a href="http://manelisim.pages.dev" className="text-zinc-500 hover:text-primary transition-colors">Manelisi Mpotulo</a>
       </p>
-      <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-primary hover:text-black transition-colors" aria-label="Back to top">
+      <Link href="#" className="p-2 bg-white/5 rounded-full hover:bg-primary hover:text-black transition-colors" aria-label="Back to top">
        <ArrowUp className="h-4 w-4" />
-      </a>
+      </Link>
      </div>
     </div>
    </div>

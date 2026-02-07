@@ -38,7 +38,7 @@ export function TrustedPartners() {
       {partners.map((partner, idx) => (
        <div
         key={`${partner.id}-${idx}`}
-        className="group relative flex items-center justify-center min-w-[150px] md:min-w-[200px] transition-all duration-300"
+        className="group relative flex items-center justify-center min-w-37.5 md:min-w-50 transition-all duration-300"
        >
         {/* Card / Logo Container */}
         <div className="relative w-full h-24 grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-110 cursor-pointer">
@@ -51,7 +51,7 @@ export function TrustedPartners() {
         </div>
 
         {/* Simple Hover Popup */}
-        <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-white shadow-lg rounded-lg px-4 py-2 text-sm text-center border whitespace-normal w-48 z-20">
+        <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-300 pointer-events-none bg-white shadow-lg rounded-lg px-4 py-2 text-sm text-center border whitespace-normal w-48 z-20">
          <p className="font-semibold text-primary">{partner.name}</p>
         </div>
        </div>
@@ -59,8 +59,8 @@ export function TrustedPartners() {
      </div>
 
      {/* Gradient Masks for edges */}
-     <div className="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-zinc-50 to-transparent z-10 pointer-events-none" />
-     <div className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-zinc-50 to-transparent z-10 pointer-events-none" />
+     <div className="absolute top-0 left-0 h-full w-24 bg-linear-to-r from-zinc-50 to-transparent z-10 pointer-events-none" />
+     <div className="absolute top-0 right-0 h-full w-24 bg-linear-to-l from-zinc-50 to-transparent z-10 pointer-events-none" />
     </div>
 
     {/* Call to Action for Partnership */}
